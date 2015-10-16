@@ -1,0 +1,39 @@
+
+<template name = "layout"> <!-- wrapped in template as used per /lib/router.js -->
+
+  <!-- Removed the following since we made the below a 'template'
+  which gets injected into Twitter Bootstrap.
+
+  <head>
+  <title> CIBC iBeacon Dashboard</title>
+  </head>
+
+  <body>
+
+  -->
+
+<!-- Inject the 'nav' partial from _partials -->
+  {{> nav}}
+
+    <div class="container">
+
+      {{> yield}} <!-- 'yield' means inject template based on current route -->
+
+      <!--
+      <div class="starter-template">
+        <h1>Bootstrap starter template</h1>
+        <p class="lead">Use this document as a way to quickly start any new project.<br> All you get is this text and a mostly barebones HTML document.</p>
+      </div>
+    -->
+
+    </div>
+
+    <!-- /.container -->
+
+
+
+
+  <!-- Body commented out as per top comment
+
+  </body> -->
+</template>
