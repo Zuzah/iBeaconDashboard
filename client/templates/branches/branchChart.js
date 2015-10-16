@@ -9,7 +9,8 @@ Template.branchIndex.helpers({
             plotShadow: false
         },
         title: {
-            text: this.username + " Most Surveyed Branches"
+            //text: this.username + " Most Surveyed Branches"
+            text: "CIBC Most Surveyed Branches"
         },
         tooltip: {
             pointFormat: '<b>{point.percentage:.1f}%</b>'
@@ -30,7 +31,7 @@ Template.branchIndex.helpers({
         },
         series: [{
             type: 'pie',
-            name: 'genre',
+            name: 'branch',
             data: [
                 ['Bay/Dundas',   45.0],
                 ['Commerce Court',       26.8],
