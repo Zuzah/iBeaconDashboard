@@ -9,9 +9,9 @@ This is a Dashboard that will be used to log iBeacon and iPhone data. Programmed
 
 #Requirments:
 1. Install MeteorJS:
-* Mac/Linux: curl https://install.meteor.com/ | sh
-* Windows: Download Installer https://install.meteor.com/windows
+  * Mac/Linux: curl https://install.meteor.com/ | sh
+  * Windows: Download Installer https://install.meteor.com/windows
 
-#Exection
+#Execution
 1. In the project folder type:
-* Mac/Linux: meteor
+  * Mac/Linux: meteor
