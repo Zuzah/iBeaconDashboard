@@ -24,3 +24,5 @@ pcel:loading
 maazalik:highcharts
 less
 http
+mrt:datatables
+momentjs:moment
