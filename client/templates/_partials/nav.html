@@ -2,31 +2,34 @@
 <template name = "nav">
 
 
-<nav class="navbar navbar-inverse navbar-fixed-top">
-  <div class="container">
+  <nav class="navbar navbar-default navbar-fixed-top" role="navigation">
+    <!-- Brand and toggle get grouped for better mobile display -->
     <div class="navbar-header">
-      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
         <span class="sr-only">Toggle navigation</span>
         <span class="icon-bar"></span>
         <span class="icon-bar"></span>
         <span class="icon-bar"></span>
       </button>
       <a class="navbar-brand" href="#">
-        <img id="small-logo" alt="Brand" src="http://upload.wikimedia.org/wikipedia/fr/thumb/0/00/Logo_CIBC.svg/1121px-Logo_CIBC.svg.png"></a>
+          <img id="small-logo" alt="Brand" src="/images/cibc.logo2.png">
+        </a>
     </div>
-    <div id="navbar" class="collapse navbar-collapse">
+
+    <!-- Collect the nav links, forms, and other content for toggling -->
+    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
       <ul class="nav navbar-nav">
-
-        <!-- route links are referenced with {{pathFor, 'routeName'}} -->
-
-        <li class="active"><a href="{{pathFor 'homeIndex'}}">Home</a></li>
+      <!-- Dashboard Links -->
+       <li class="active"><a href="{{pathFor 'homeIndex'}}">Home</a></li>
           <li class="active"><a href=" {{pathFor 'branchIndex'}} ">Branch</a></li>
-        <li class="active"><a href=" {{pathFor 'customerRepsIndex'}} ">CSR</a></li>
-        <li class="active"><a href=" {{pathFor 'contactIndex'}} ">Contact</a></li>
+          <li class="active"><a href=" {{pathFor 'customerRepsIndex'}} ">CSR</a></li>
+          <li class="active"><a href=" {{pathFor 'contactIndex'}} ">Contact</a></li>
       </ul>
-    </div><!--/.nav-collapse -->
-  </div>
-</nav>
+
+
+    </div><!-- /.navbar-collapse -->
+  </nav>
+
 
 
 </template>
