@@ -26,3 +26,5 @@ less
 http
 mrt:datatables
 momentjs:moment
+chart:chart
+underscore
