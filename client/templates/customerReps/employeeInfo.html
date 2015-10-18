@@ -1,6 +1,6 @@
 <template name="employeeInfo">
   <div class="page employeeDiv">
-    {{>nav title='Home' black=true}}
+
     <div id="empObjId" style="display:none">{{_objectId}}</div>
     <div id="empId" style="display:none">{{_repID}}</div>
 
@@ -9,9 +9,11 @@
       <span style="font-weight: bold">{{employee.name}}</span>
       <table class="table">
         <tr>
+          <th>Date</th>
           <th>Customer ID</th>
-          <th>Question1</th>
-          <th>Question2</th>
+          <th>Recommendations</th>
+          <th>Satisfaction</th>
+          <th>Comments</th>
         </tr>
         {{#each ratings}}
             {{> employeeRating}}
@@ -22,8 +24,10 @@
 </template>
 <template name="employeeRating">
   <tr>
+    <td>{{createdAt}}</td>
     <td>{{customerID}}</td>
     <td>{{answer1}}</td>
     <td>{{answer2}}</td>
+    <td>{{feedback}}</td>
   </tr>
 </template>
